@@ -1,17 +1,20 @@
 /*=======================================================================
-Name        : App.css
+Name        : NotFoundPage.js
 Assignment  : Lab 8
 Author(s)   : Jaimal Sahota, Mahdi Ansari, William Arthur Philip Louis
 Submission  : Mar 11, 2024
 Description : Learning React
 ===========================================================================*/
-.App {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: start;
-  background-color: #282c34;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  min-height: 100vh;
-}
+
+import React from "react";
+
+const NotFoundPage = () => {
+  return (
+    <div>
+      <h2>404 Not Found</h2>
+      <p>The page you're looking for does not exist.</p>
+    </div>
+  );
+};
+
+export default NotFoundPage;
