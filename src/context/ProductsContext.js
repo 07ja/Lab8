@@ -9,7 +9,6 @@ Description : Learning React
 import React, { createContext, useContext, useState } from "react";
 
 const ProductsContext = createContext();
-
 export const useProductsContext = () => useContext(ProductsContext);
 
 export const ProductsProvider = ({ children }) => {

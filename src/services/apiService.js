@@ -19,7 +19,14 @@ export const fetchProducts = async () => {
   }
 };
 
-export const getProductDetails = async (id) => {};
+export const getProductDetails = async (id) => {
+  try {
+    const response = await axios.get(BASE_URL);
+    return response.data;
+  } catch (error) {
+    throw error;
+  }
+};
 
 export const removeProduct = async (id) => {
   try {
